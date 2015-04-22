@@ -1,3 +1,25 @@
-<div>
-<strong>user id: </strong>{{id}}
+<div align="center" style="margin-top:20%">
+<div style="width:60%">
+  <table class="table table-striped table-bordered table">
+    <tbody>
+      <tr>
+        <td>ID</td>
+        <td ng-bind="usersdetail.id"></td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td ng-bind="usersdetail.username"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td ng-bind="usersdetail.email"></td>
+      </tr>
+      <tr>
+        <td>status</td>
+        <td ng-if="usersdetail.status==1">Active</td>
+        <td ng-if="usersdetail.status==0">In-active</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </div>
