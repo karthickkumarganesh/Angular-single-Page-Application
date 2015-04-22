@@ -18,8 +18,8 @@
       <td>{{user.email}}</td>
       <td>{{user.age}}</td>
       
-      <td ng-if="user.status==1">Active</td>
-      <td ng-if="user.status==0">In-Active</td>
+      <td ng-if="user.status==1">{{user.status | statusIcon}}</td>
+      <td ng-if="user.status==0">{{user.status | statusIcon}}</td>
       <td><a href="#/view/{{user.id}}" class="btn btn-success">View</a></td>
     </tr>
   </tbody>
